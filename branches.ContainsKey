@@ -1,0 +1,11 @@
+  public void Checkout(string branch)
+    {
+        if (branches.ContainsKey(branch))
+        {
+            currentBranch = branch;
+            Console.WriteLine($"Switched to branch: {branch}");
+        }
+        else
+        {
+            Console.WriteLine($"Branch '{branch}' does not exist");
+        }
